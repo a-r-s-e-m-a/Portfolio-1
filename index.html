@@ -3,11 +3,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio of Arsema Yeshidnber, Software Engineering student at Addis Ababa Science and Technology University, showcasing skills, education, and software projects.">
+
+    <meta name="keywords" content="Arsema Yeshidnber, portfolio, software engineering, web developer, HTML, Java, Python, C++">
+
+    <meta name="author" content="Arsema Yeshidnber">
+
     <title>Arsema Yeshidnber | Portfolio</title>
-    <link rel="icon" type="image/png" href="image\favicon.png">
+
+    <link rel="icon" type="image/png" href="image/favicon.png">
 </head>
 <body>
-
+<header>
     <h1>ARSEMA YESHIDNBER</h1>
 
     <img src="image\Profile picture.jpg"
@@ -18,18 +28,21 @@
 
     <p>Software Engineering student passionate about technology, software development, and creating innovative solutions through continuous learning and problem-solving.</p>
 
-    <p>
+    <nav>
         <a href="#about">About</a> |
         <a href="#skills">Skills</a> |
         <a href="#projects">Projects</a> |
         <a href="#education">Education</a> |
         <a href="#contact">Contact</a> |
         <a href="project.html">All Projects</a>
-    </p>
+    </nav>
+    </header>
 
-    <hr>
+    <main>
 
-    <h2 id="about">About Me</h2>
+
+    <section id="about">
+        <h2>About Me</h2>
 
     <p>
         I am a senior <strong>Software Engineering</strong> student at Addis Ababa Science and Technology University.
@@ -46,9 +59,11 @@
         This is my 1<sup>st</sup> portfolio website.
         I also try to drink enough H<sub>2</sub>O while coding.
     </p>
+    </section>
 
-    <hr>
 
+
+    <aside>
     <h2 id="inspiration">What Inspires Me</h2>
 
     <blockquote>
@@ -63,11 +78,12 @@
         Book I am interested in reading:
         <cite>Clean Code</cite> by Robert C. Martin.
     </p>
+    </aside>
+    
+    
 
-    <hr>
-
-    <h2 id="skills">Skills</h2>
-
+    <section id="skills">
+        <h2>Skills</h2>
     <ul>
         <li>Programming Languages
             <ul type="square">
@@ -115,53 +131,61 @@
         <dt>Git and GitHub</dt>
         <dd>Saves versions of my code and shares my projects online.</dd>
     </dl>
+    </section>
 
-    <hr>
+    
 
-    <h2 id="projects">Projects</h2>
+    <section id="projects">
+        <h2>Projects</h2>
 
+    
+    <article>
     <h3>Simple Calculator</h3>
-
     <img src="image\Project - Simple calculator.png"
      alt="Simple Calculator project screenshot"
      width="400"
      height="250"
      style="object-fit: cover;">
-
     <p>A simple program that performs addition, subtraction, multiplication, and division.</p>
+    </article>
 
+
+    <article>
     <h3>Library Management System</h3>
-
     <img src="image\Project - Library management system.png" 
     alt="Library Management System screenshot"
          width="400"
          height="250"
          style="object-fit: cover;">
-
     <p>A console program for managing books and handling borrowing and returning books.</p>
+    </article>
 
+
+    <article>
     <h3>Inventory Management System</h3>
-
     <img src="image\Project - Inventory management system.png" 
     alt="Inventory Management System screenshot"
          width="400"
          height="250"
          style="object-fit: cover;">
-
     <p>A program for managing products and tracking available stock.</p>
+    </article>
 
+
+    <article>
     <h3>Adaptive Traffic Management System</h3>
-
     <img src="image\Project - Adaptive traffic management system.png" 
     alt="Adaptive Traffic Management System screenshot"
          width="400"
          height="250"
          style="object-fit: cover;">
-
     <p>A C++ project that manages traffic lights based on the number of vehicles on different roads.</p>
+    </article>
 
+
+
+    <article>
     <h3>My First Program</h3>
-
     <p>
         One of my first programming exercises was displaying
         a message using Python:
@@ -181,14 +205,18 @@ int main() {
     cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
     return 0;
 }</code></pre>
+ </article>
+
 
     <p>
         <a href="project.html">See all my projects →</a>
     </p>
+    </section>
 
-    <hr>
+    
 
-    <h2 id="education">Education</h2>
+    <section id="education">
+        <h2>Education</h2>
 
     <h3>BSc in Software Engineering</h3>
     <p>Addis Ababa Science and Technology University, 2023 – present.</p>
@@ -413,10 +441,11 @@ int main() {
             </tr>
         </tfoot>
     </table>
+    </section>
 
-    <hr>
 
-    <h2 id="contact">Contact</h2>
+    <section id="contact">
+        <h2>Contact</h2>
 
     <p>
         Address: AASTU, Tulludimtu<br>
@@ -478,6 +507,13 @@ int main() {
               href="mailto:arsema.yeshidnber.2@gmail.com"
               alt="Email">
     </map>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Arsema Yeshidnber. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
