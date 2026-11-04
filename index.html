@@ -17,6 +17,7 @@
     <link rel="icon" type="image/png" href="image/favicon.png">
 </head>
 <body>
+
 <header>
     <h1>ARSEMA YESHIDNBER</h1>
 
@@ -27,6 +28,33 @@
          height="200">
 
     <p>Software Engineering student passionate about technology, software development, and creating innovative solutions through continuous learning and problem-solving.</p>
+
+    <!-- Lab 12: Hire Me Dialog -->
+    <button type="button"
+            onclick="document.getElementById('hireDialog').showModal()">
+        Hire me
+    </button>
+
+    <dialog id="hireDialog">
+
+        <h2>Available for Internships</h2>
+
+        <p>
+            I am available for internships and freelance web projects from June 2027.
+        </p>
+
+        <p>
+            <a href="#contact">Send me a message</a>
+            or
+            <a href="files/cv.pdf" download>download my CV</a>.
+        </p>
+
+        <button type="button"
+                onclick="document.getElementById('hireDialog').close()">
+            Close
+        </button>
+
+    </dialog>
 
     <nav>
         <a href="#about">About</a> |
@@ -131,6 +159,47 @@
             </li>
         </ul>
 
+        <!-- Lab 12: Skill Level Meters -->
+        <h3>Skill Levels</h3>
+
+        <p>
+            <label for="lvl-html">HTML</label>
+            <meter id="lvl-html" value="0.8" min="0" max="1">
+                80%
+            </meter>
+            80%
+        </p>
+
+        <p>
+            <label for="lvl-python">Python</label>
+            <meter id="lvl-python" value="0.7" min="0" max="1">
+                70%
+            </meter>
+            70%
+        </p>
+
+        <p>
+            <label for="lvl-js">JavaScript</label>
+            <meter id="lvl-js"
+                   value="0.2"
+                   min="0"
+                   max="1"
+                   low="0.3"
+                   high="0.7"
+                   optimum="1">
+                20%
+            </meter>
+            20%
+        </p>
+
+        <p>
+            <label for="lvl-cpp">C++</label>
+            <meter id="lvl-cpp" value="0.7" min="0" max="1">
+                70%
+            </meter>
+            70%
+        </p>
+
         <h3>My Learning Roadmap</h3>
 
         <ol type="1">
@@ -160,11 +229,13 @@
 
         <article>
             <h3>Simple Calculator</h3>
+
             <img src="image/Project - Simple calculator.png"
                  alt="Simple Calculator project screenshot"
                  width="400"
                  height="250"
                  style="object-fit: cover;">
+
             <p>
                 A simple calculator application developed to perform basic mathematical operations,
                 including addition, subtraction, multiplication, division, power, logarithm and also others. The project allows
@@ -176,11 +247,13 @@
 
         <article>
             <h3>Library Management System</h3>
+
             <img src="image/Project - Library management system.png"
                  alt="Library Management System screenshot"
                  width="400"
                  height="250"
                  style="object-fit: cover;">
+
             <p>
                 A console-based application designed to help manage library activities and book
                 records. It supports organizing book information and handling common operations
@@ -192,11 +265,13 @@
 
         <article>
             <h3>Inventory Management System</h3>
+
             <img src="image/Project - Inventory management system.png"
                  alt="Inventory Management System screenshot"
                  width="400"
                  height="250"
                  style="object-fit: cover;">
+
             <p>
                 An application developed to manage product information and keep track of available
                 stock. It helps users organize inventory records, monitor product quantities, and
@@ -208,11 +283,13 @@
 
         <article>
             <h3>Adaptive Traffic Management System</h3>
+
             <img src="image/Project - Adaptive traffic management system.png"
                  alt="Adaptive Traffic Management System screenshot"
                  width="400"
                  height="250"
                  style="object-fit: cover;">
+
             <p>
                 A C++ project designed to manage traffic lights based on the number of vehicles
                 waiting on different roads. The system uses vehicle counts to adjust traffic light
@@ -225,6 +302,7 @@
 
         <article>
             <h3>My First Program</h3>
+
             <p>
                 One of my first programming exercises was displaying
                 a message using Python:
@@ -255,7 +333,21 @@ int main() {
         <h2>Education</h2>
 
         <h3>BSc in Software Engineering</h3>
-        <p>Addis Ababa Science and Technology University, 2023 – present.</p>
+
+        <p>
+            Addis Ababa Science and Technology University, 2023 – present.
+        </p>
+
+        <!-- Lab 12: Degree Progress -->
+        <p>
+            <label for="degree">Degree progress:</label>
+
+            <progress id="degree" value="40" max="100">
+                40%
+            </progress>
+
+            40%
+        </p>
 
         <h3>Academic Record</h3>
 
