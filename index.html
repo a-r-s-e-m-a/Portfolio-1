@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,6 +87,12 @@
             I also try to drink enough H<sub>2</sub>O while coding.
         </p>
 
+        <!-- Lab 13: Display HTML tags as text using entities -->
+        <p>
+            My favourite tag is &lt;main&gt;, because it tells the browser
+            where the important content is &amp; helps screen readers.
+        </p>
+
         <!-- Lab 11: Audio Introduction -->
         <h3>Hear My Introduction</h3>
 
@@ -145,7 +151,7 @@
 
             <li>Web Development
                 <ul type="circle">
-                    <li>HTML</li>
+                    <li><abbr title="HyperText Markup Language">HTML</abbr></li>
                     <li>CSS (learning)</li>
                     <li>JavaScript (next)</li>
                 </ul>
@@ -335,7 +341,8 @@ int main() {
         <h3>BSc in Software Engineering</h3>
 
         <p>
-            Addis Ababa Science and Technology University, 2023 – present.
+            Addis Ababa Science and Technology University,
+            <time datetime="2023-09">September 2023</time> – present.
         </p>
 
         <!-- Lab 12: Degree Progress -->
@@ -575,7 +582,7 @@ int main() {
         <h2>Contact</h2>
 
         <p>
-            Address: AASTU, Tulludimtu<br>
+            Address: <abbr title="Addis Ababa Science and Technology University">AASTU</abbr>, Tulludimtu<br>
             Addis Ababa,<br>
             Ethiopia
         </p>
@@ -587,7 +594,7 @@ int main() {
 
         <p>
             Phone:
-            <a href="tel:+251912133345">+251 912 133 345</a>
+            <a href="tel:+251912133345">+251&nbsp;912&nbsp;133&nbsp;345</a>
         </p>
 
         <p>
@@ -603,7 +610,7 @@ int main() {
         </p>
 
         <p>
-            CV:
+            <abbr title="Curriculum Vitae">CV</abbr>:
             <a href="files/cv.pdf" download>
                 Download My CV here.
             </a>
@@ -797,8 +804,12 @@ int main() {
 
 <footer>
     <p>&copy; 2026 Arsema Yeshidnber. All rights reserved.</p>
+
+    <p>
+        Last updated:
+        <time datetime="2026-11-05">5 November 2026</time>
+    </p>
 </footer>
 
 </body>
 </html>
-```
