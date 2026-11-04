@@ -138,7 +138,13 @@
                  width="400"
                  height="250"
                  style="object-fit: cover;">
-            <p>A simple program that performs addition, subtraction, multiplication, and division.</p>
+                <p> 
+                    A simple calculator application developed to perform basic mathematical operations,
+                    including addition, subtraction, multiplication, division, power, logarithm and also others. The project allows
+                    users to enter numbers and select an operation to calculate the result. It helped
+                    me practice programming fundamentals, user input, conditional statements, and
+                    basic problem-solving.
+                </p>
         </article>
 
         <article>
@@ -148,7 +154,13 @@
                  width="400"
                  height="250"
                  style="object-fit: cover;">
-            <p>A console program for managing books and handling borrowing and returning books.</p>
+            <p>
+                A console-based application designed to help manage library activities and book
+                records. It supports organizing book information and handling common operations
+                such as borrowing and returning books. This project helped me understand how to
+                organize data, work with records, and apply programming concepts to solve a
+                practical problem in library management.
+            </p>
         </article>
 
         <article>
@@ -158,7 +170,13 @@
                  width="400"
                  height="250"
                  style="object-fit: cover;">
-            <p>A program for managing products and tracking available stock.</p>
+            <p>
+                An application developed to manage product information and keep track of available
+                stock. It helps users organize inventory records, monitor product quantities, and
+                manage basic stock-related operations. Through this project, I practiced working
+                with data, organizing product records, and developing a solution for everyday
+                inventory management tasks.
+            </p>
         </article>
 
         <article>
@@ -168,7 +186,14 @@
                  width="400"
                  height="250"
                  style="object-fit: cover;">
-            <p>A C++ project that manages traffic lights based on the number of vehicles on different roads.</p>
+            <p>
+                A C++ project designed to manage traffic lights based on the number of vehicles
+                waiting on different roads. The system uses vehicle counts to adjust traffic light
+                timing, helping give busier roads more time to move traffic. It also uses SQLite
+                to store traffic information and file handling to keep records. This project
+                strengthened my understanding of conditional logic, database operations, and
+                applying programming to a real-world traffic problem.
+            </p>
         </article>
 
         <article>
@@ -493,18 +518,102 @@ int main() {
 
         <h3>Send me a message</h3>
 
-        <form action="thank-you.html" method="get">
+        <form action="thank-you.html" method="post" enctype="multipart/form-data">
 
             <fieldset>
                 <legend>Your Details</legend>
 
                 <label for="fullname">Full name:</label>
-                <input type="text" id="fullname" name="fullname">
+                <input type="text" id="fullname" name="fullname" required>
 
                 <br><br>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <!-- Lab 10: Project Details -->
+            <fieldset>
+                <legend>Project Details</legend>
+
+                <label for="phone">Phone (optional):</label>
+                <input type="text"
+                       id="phone"
+                       name="phone"
+                       pattern="0[79][0-9]{8}"
+                       title="10 digits starting with 09 or 07">
+
+                <br><br>
+
+                <p>Preferred contact method:</p>
+
+                <input type="radio"
+                       id="by-email"
+                       name="contact-method"
+                       value="email"
+                       checked>
+
+                <label for="by-email">Email</label>
+
+                <input type="radio"
+                       id="by-phone"
+                       name="contact-method"
+                       value="phone">
+
+                <label for="by-phone">Phone</label>
+
+                <br><br>
+
+                <label for="meeting">Preferred meeting date:</label>
+                <input type="date"
+                       id="meeting"
+                       name="meeting"
+                       min="2026-11-01">
+
+                <br><br>
+
+                <label for="weeks">Project length (weeks):</label>
+                <input type="number"
+                       id="weeks"
+                       name="weeks"
+                       min="1"
+                       max="52"
+                       step="1">
+
+                <br><br>
+
+                <label for="brief">Attach a project brief:</label>
+                <input type="file"
+                       id="brief"
+                       name="brief">
+
+                <br><br>
+
+                <label for="colour">Preferred website colour:</label>
+                <input type="color"
+                       id="colour"
+                       name="colour"
+                       value="#1f5fa8">
+
+                <br><br>
+
+                <label for="rating">How much do you like my portfolio? (1–10)</label>
+                <input type="range"
+                       id="rating"
+                       name="rating"
+                       min="1"
+                       max="10"
+                       value="7">
+
+                <br><br>
+
+                <label for="budget">Your budget (ETB):</label>
+                <input type="number"
+                       id="budget"
+                       name="budget"
+                       min="1000"
+                       step="500">
+
             </fieldset>
 
             <fieldset>
@@ -512,7 +621,7 @@ int main() {
 
                 <label for="reason">Reason for contacting me:</label>
 
-                <select id="reason" name="reason">
+                <select id="reason" name="reason" required>
                     <optgroup label="Work">
                         <option value="internship">Internship offer</option>
                         <option value="freelance">Freelance project</option>
@@ -532,7 +641,21 @@ int main() {
                 <label for="message">Message:</label>
                 <br>
 
-                <textarea id="message" name="message" rows="6" cols="40"></textarea>
+                <textarea id="message"
+                          name="message"
+                          rows="6"
+                          cols="40"
+                          required></textarea>
+
+                <br>
+
+                <input type="checkbox"
+                       id="copy"
+                       name="copy"
+                       value="yes">
+
+                <label for="copy">Send me a copy of this message</label>
+
             </fieldset>
 
             <button type="submit">Send Message</button>
