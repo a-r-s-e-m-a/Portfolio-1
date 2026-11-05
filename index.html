@@ -19,7 +19,7 @@
 <body>
 
 <header>
-    <!-- Lab 14: Personal Logo Canvas -->
+
     <canvas id="logo" width="120" height="120">
         Arsema Yeshidnber logo
     </canvas>
@@ -34,7 +34,6 @@
 
     <p>Software Engineering student passionate about technology, software development, and creating innovative solutions through continuous learning and problem-solving.</p>
 
-    <!-- Lab 12: Hire Me Dialog -->
     <button type="button"
             onclick="document.getElementById('hireDialog').showModal()">
         Hire me
@@ -92,13 +91,12 @@
             I also try to drink enough H<sub>2</sub>O while coding.
         </p>
 
-        <!-- Lab 13: Display HTML tags as text using entities -->
         <p>
             My favourite tag is &lt;main&gt;, because it tells the browser
             where the important content is &amp; helps screen readers.
         </p>
 
-        <!-- Lab 11: Audio Introduction -->
+        
         <h3>Hear My Introduction</h3>
 
         <audio controls>
@@ -124,7 +122,7 @@
             <cite>Clean Code</cite> by Robert C. Martin.
         </p>
 
-        <!-- Lab 11: Embedded YouTube Talk -->
+    
         <h3>A Talk I Recommend</h3>
 
         <p>
@@ -170,7 +168,6 @@
             </li>
         </ul>
 
-        <!-- Lab 12: Skill Level Meters -->
         <h3>Skill Levels</h3>
 
         <p>
@@ -211,7 +208,6 @@
             70%
         </p>
 
-        <!-- Lab 14: Skills Bar Chart Canvas -->
         <h3>My Skills Chart</h3>
 
         <canvas id="skillChart" width="300" height="150">
@@ -357,7 +353,6 @@ int main() {
             <time datetime="2023-09">September 2023</time> – present.
         </p>
 
-        <!-- Lab 12: Degree Progress -->
         <p>
             <label for="degree">Degree progress:</label>
 
@@ -384,7 +379,6 @@ int main() {
             </thead>
 
             <tbody>
-                <!-- Year 1, Semester I -->
                 <tr>
                     <td rowspan="14">Year 1</td>
                     <td rowspan="8">Semester I</td>
@@ -428,7 +422,6 @@ int main() {
                     <td>P</td>
                 </tr>
 
-                <!-- Year 1, Semester II -->
                 <tr>
                     <td rowspan="6">Semester II</td>
                     <td>Phys1001 - General Physics</td>
@@ -461,7 +454,6 @@ int main() {
                     <td>A</td>
                 </tr>
 
-                <!-- Year 2, Semester I -->
                 <tr>
                     <td rowspan="11">Year 2</td>
                     <td rowspan="6">Semester I</td>
@@ -495,7 +487,6 @@ int main() {
                     <td>A-</td>
                 </tr>
 
-                <!-- Year 2, Semester II -->
                 <tr>
                     <td rowspan="5">Semester II</td>
                     <td>Econ2009 - Economics</td>
@@ -653,7 +644,6 @@ int main() {
                   alt="Email">
         </map>
 
-        <!-- Lab 11: University Google Map -->
         <h3>Where I Study</h3>
 
         <iframe
@@ -679,7 +669,6 @@ int main() {
                 <input type="email" id="email" name="email" required>
             </fieldset>
 
-            <!-- Lab 10: Project Details -->
             <fieldset>
                 <legend>Project Details</legend>
 
@@ -823,24 +812,19 @@ int main() {
     </p>
 </footer>
 
-<!-- Lab 14: JavaScript Drawing Code -->
 <script>
 
-    // 1. Draw the personal logo
     const canvas = document.getElementById('logo');
     const ctx = canvas.getContext('2d');
 
-    // Blue square background
     ctx.fillStyle = "#1f5fa8";
     ctx.fillRect(0, 0, 120, 120);
 
-    // White circle
     ctx.beginPath();
     ctx.arc(60, 60, 45, 0, 2 * Math.PI);
     ctx.fillStyle = "white";
     ctx.fill();
 
-    // My initials
     ctx.fillStyle = "#1f5fa8";
     ctx.font = "bold 36px Arial";
     ctx.textAlign = "center";
@@ -848,24 +832,19 @@ int main() {
     ctx.fillText("AY", 60, 62);
 
 
-    // 2. Draw the skills bar chart
     const chart = document.getElementById('skillChart');
     const chartCtx = chart.getContext('2d');
 
-    // HTML bar: 80% of 120 pixels = 96 pixels
     chartCtx.fillStyle = "#1f5fa8";
+
     chartCtx.fillRect(25, 130 - 96, 40, 96);
 
-    // Python bar: 70% of 120 pixels = 84 pixels
     chartCtx.fillRect(95, 130 - 84, 40, 84);
 
-    // JavaScript bar: 20% of 120 pixels = 24 pixels
     chartCtx.fillRect(165, 130 - 24, 40, 24);
 
-    // C++ bar: 70% of 120 pixels = 84 pixels
     chartCtx.fillRect(235, 130 - 84, 40, 84);
 
-    // Skill names below the bars
     chartCtx.fillStyle = "#000000";
     chartCtx.font = "12px Arial";
     chartCtx.textAlign = "center";
