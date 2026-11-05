@@ -1,6 +1,7 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -16,297 +17,334 @@
 
     <link rel="icon" type="image/png" href="./image/favicon.png">
 </head>
+
 <body>
 
-    <h1>MY PROJECTS</h1>
+    <header>
+        <h1>MY PROJECTS</h1>
 
-    <table border="1" cellpadding="8" cellspacing="0">
-        <caption>Project Summary</caption>
+        <nav>
+            <a href="index.html">Back to Home</a>
+            |
+            <a href="index.html#contact">Contact Me</a>
+        </nav>
+    </header>
 
-        <thead>
-            <tr>
-                <th>Project</th>
-                <th>Language</th>
-                <th>Year</th>
-                <th>Link</th>
-            </tr>
-        </thead>
+    <main>
 
-        <tbody>
-            <tr>
-                <td>Simple - Calculator</td>
-                <td>Java</td>
-                <td><time datetime="2025-10">October 2025</time></td>
-                <td><a href="#calculator">View</a></td>
-            </tr>
+        <section id="project-summary">
 
-            <tr>
-                <td>Library Management System</td>
-                <td>Java</td>
-                <td><time datetime="2025-11">November 2025</time></td>
-                <td><a href="#library">View</a></td>
-            </tr>
+            <h2>Project Summary</h2>
 
-            <tr>
-                <td>Inventory Management System</td>
-                <td>Java</td>
-                <td><time datetime="2026-08">August 2026</time></td>
-                <td><a href="#inventory">View</a></td>
-            </tr>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <caption>Project Summary</caption>
 
-            <tr>
-                <td>Adaptive Traffic Management System</td>
-                <td>C++</td>
-                <td><time datetime="2026-04">April 2026</time></td>
-                <td><a href="#traffic">View</a></td>
-            </tr>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Language</th>
+                        <th>Year</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
 
-            <tr>
-                <td>QuickBite Food Delivery Database</td>
-                <td>MySQL and MongoDB</td>
-                <td><time datetime="2026-06">June 2026</time></td>
-                <td><a href="#quickbite">View</a></td>
-            </tr>
-        </tbody>
+                <tbody>
+                    <tr>
+                        <td>Simple - Calculator</td>
+                        <td>Java</td>
+                        <td><time datetime="2025-10">October 2025</time></td>
+                        <td><a href="#calculator">View</a></td>
+                    </tr>
 
-        <tfoot>
-            <tr>
-                <th colspan="3">Total projects</th>
-                <th>5</th>
-            </tr>
-        </tfoot>
-    </table>
+                    <tr>
+                        <td>Library Management System</td>
+                        <td>Java</td>
+                        <td><time datetime="2025-11">November 2025</time></td>
+                        <td><a href="#library">View</a></td>
+                    </tr>
 
-    <p>
-        <a href="index.html">Back to Home</a>
-    </p>
+                    <tr>
+                        <td>Inventory Management System</td>
+                        <td>Java</td>
+                        <td><time datetime="2026-08">August 2026</time></td>
+                        <td><a href="#inventory">View</a></td>
+                    </tr>
 
-    <hr>
+                    <tr>
+                        <td>Adaptive Traffic Management System</td>
+                        <td>C++</td>
+                        <td><time datetime="2026-04">April 2026</time></td>
+                        <td><a href="#traffic">View</a></td>
+                    </tr>
 
-    <h2 id="calculator">Simple Calculator</h2>
+                    <tr>
+                        <td>QuickBite Food Delivery Database</td>
+                        <td>MySQL and MongoDB</td>
+                        <td><time datetime="2026-06">June 2026</time></td>
+                        <td><a href="#quickbite">View</a></td>
+                    </tr>
+                </tbody>
 
-    <img src="image/Project - Simple calculator.png"
-         alt="Simple Calculator project screenshot"
-         width="400"
-         height="250"
-         style="object-fit: cover;">
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total projects</th>
+                        <th>5</th>
+                    </tr>
+                </tfoot>
+            </table>
 
-    <p>
-        A simple calculator application developed to perform basic mathematical operations,
-        including addition, subtraction, multiplication, division, power, logarithm, and also others. The project allows
-        users to enter numbers and select an operation to calculate the result. It helped
-        me practice programming fundamentals, user input, conditional statements, and
-        basic problem-solving.
-    </p>
+        </section>
 
-    <h3>Watch the Demo</h3>
+        <section id="all-projects">
 
-    <video controls
-           poster="image/project-demo-poster.jpg"
-           width="640"
-           height="360">
+            <h2>My Projects</h2>
 
-        <source src="media/project-demo.mp4" type="video/mp4">
-        <source src="media/project-demo.webm" type="video/webm">
+            <article id="calculator">
 
-        <track src="media/project-demo.vtt"
-               kind="captions"
-               srclang="en"
-               label="English"
-               default>
+                <h2>Simple Calculator</h2>
 
-        Your browser does not support the video tag.
-    </video>
+                <img src="image/Project - Simple calculator.png"
+                     alt="Simple Calculator project screenshot"
+                     width="400"
+                     height="250"
+                     style="object-fit: cover;">
 
-    <details>
-        <summary>How I Built It</summary>
+                <p>
+                    A simple calculator application developed to perform basic mathematical operations,
+                    including addition, subtraction, multiplication, division, power, logarithm, and also others. The project allows
+                    users to enter numbers and select an operation to calculate the result. It helped
+                    me practice programming fundamentals, user input, conditional statements, and
+                    basic problem-solving.
+                </p>
 
-        <ol>
-            <li>Created a new project and prepared the program structure.</li>
-            <li>Accepted two numbers from the user.</li>
-            <li>Added operations for addition, subtraction, multiplication, and division.</li>
-            <li>Displayed the calculated result to the user.</li>
-        </ol>
-    </details>
+                <h3>Watch the Demo</h3>
 
-    <h3>Technologies Used</h3>
+                <video controls
+                       poster="image/project-demo-poster.jpg"
+                       width="640"
+                       height="360">
 
-    <ul>
-        <li>Java</li>
-        <li>IntelliJ IDEA</li>
-    </ul>
+                    <source src="media/project-demo.mp4" type="video/mp4">
+                    <source src="media/project-demo.webm" type="video/webm">
 
-    <hr>
+                    <track src="media/project-demo.vtt"
+                           kind="captions"
+                           srclang="en"
+                           label="English"
+                           default>
 
-    <h2 id="library">Library Management System</h2>
+                    Your browser does not support the video tag.
+                </video>
 
-    <img src="image/Project - Library management system.png"
-         alt="Library Management System screenshot"
-         width="400"
-         height="250"
-         style="object-fit: cover;">
+                <details>
+                    <summary>How I Built It</summary>
 
-    <p>
-        A console-based application designed to help manage library activities and book
-        records. It supports organizing book information and handling common operations
-        such as borrowing and returning books. This project helped me understand how to
-        organize data, work with records, and apply programming concepts to solve a
-        practical problem in library management.
-    </p>
+                    <ol>
+                        <li>Created a new project and prepared the program structure.</li>
+                        <li>Accepted two numbers from the user.</li>
+                        <li>Added operations for addition, subtraction, multiplication, and division.</li>
+                        <li>Displayed the calculated result to the user.</li>
+                    </ol>
+                </details>
 
-    <details>
-        <summary>How I Built It</summary>
+                <h3>Technologies Used</h3>
 
-        <ol>
-            <li>Designed the main menu for the library system.</li>
-            <li>Created options for adding and viewing books.</li>
-            <li>Added functionality for borrowing books.</li>
-            <li>Added functionality for returning borrowed books.</li>
-        </ol>
-    </details>
+                <ul>
+                    <li>Java</li>
+                    <li>IntelliJ IDEA</li>
+                </ul>
 
-    <h3>Technologies Used</h3>
+            </article>
 
-    <ul>
-        <li>Java</li>
-        <li>Object-Oriented Programming</li>
-        <li>Console Input and Output</li>
-    </ul>
+            <article id="library">
 
-    <hr>
+                <h2>Library Management System</h2>
 
-    <h2 id="inventory">Inventory Management System</h2>
+                <img src="image/Project - Library management system.png"
+                     alt="Library Management System screenshot"
+                     width="400"
+                     height="250"
+                     style="object-fit: cover;">
 
-    <img src="image/Project - Inventory management system.png"
-         alt="Inventory Management System screenshot"
-         width="400"
-         height="250"
-         style="object-fit: cover;">
+                <p>
+                    A console-based application designed to help manage library activities and book
+                    records. It supports organizing book information and handling common operations
+                    such as borrowing and returning books. This project helped me understand how to
+                    organize data, work with records, and apply programming concepts to solve a
+                    practical problem in library management.
+                </p>
 
-    <p>
-        An application developed to manage product information and keep track of available
-        stock. It helps users organize inventory records, monitor product quantities, and
-        manage basic stock-related operations. Through this project, I practiced working
-        with data, organizing product records, and developing a solution for everyday
-        inventory management tasks.
-    </p>
+                <details>
+                    <summary>How I Built It</summary>
 
-    <details>
-        <summary>How I Built It</summary>
+                    <ol>
+                        <li>Designed the main menu for the library system.</li>
+                        <li>Created options for adding and viewing books.</li>
+                        <li>Added functionality for borrowing books.</li>
+                        <li>Added functionality for returning borrowed books.</li>
+                    </ol>
+                </details>
 
-        <ol>
-            <li>Created the program structure and product information.</li>
-            <li>Added functionality for registering new products.</li>
-            <li>Implemented options for updating product information.</li>
-            <li>Added functionality for tracking available stock.</li>
-        </ol>
-    </details>
+                <h3>Technologies Used</h3>
 
-    <h3>Technologies Used</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Object-Oriented Programming</li>
+                    <li>Console Input and Output</li>
+                </ul>
 
-    <ul>
-        <li>Java</li>
-        <li>Object-Oriented Programming</li>
-        <li>Console Input and Output</li>
-    </ul>
+            </article>
 
-    <hr>
+            <article id="inventory">
 
-    <h2 id="traffic">Adaptive Traffic Management System</h2>
+                <h2>Inventory Management System</h2>
 
-    <img src="image/Project - Adaptive traffic management system.png"
-         alt="Adaptive Traffic Management System screenshot"
-         width="400"
-         height="250"
-         style="object-fit: cover;">
+                <img src="image/Project - Inventory management system.png"
+                     alt="Inventory Management System screenshot"
+                     width="400"
+                     height="250"
+                     style="object-fit: cover;">
 
-    <p>
-        A C++ project designed to manage traffic lights based on the number of vehicles
-        waiting on different roads. The system uses vehicle counts to adjust traffic light
-        timing, helping give busier roads more time to move traffic. It also uses SQLite
-        to store traffic information and file handling to keep records. This project
-        strengthened my understanding of conditional logic, database operations, and
-        applying programming to a real-world traffic problem.
-    </p>
+                <p>
+                    An application developed to manage product information and keep track of available
+                    stock. It helps users organize inventory records, monitor product quantities, and
+                    manage basic stock-related operations. Through this project, I practiced working
+                    with data, organizing product records, and developing a solution for everyday
+                    inventory management tasks.
+                </p>
 
-    <details>
-        <summary>How I Built It</summary>
+                <details>
+                    <summary>How I Built It</summary>
 
-        <ol>
-            <li>Designed the system to represent four traffic lanes.</li>
-            <li>Collected vehicle information for each lane.</li>
-            <li>Implemented traffic light timing based on vehicle numbers.</li>
-            <li>Used a database and file handling to store traffic information and records.</li>
-        </ol>
-    </details>
+                    <ol>
+                        <li>Created the program structure and product information.</li>
+                        <li>Added functionality for registering new products.</li>
+                        <li>Implemented options for updating product information.</li>
+                        <li>Added functionality for tracking available stock.</li>
+                    </ol>
+                </details>
 
-    <h3>Technologies Used</h3>
+                <h3>Technologies Used</h3>
 
-    <ul>
-        <li>C++</li>
-        <li>SQLite3</li>
-        <li>File Handling</li>
-    </ul>
+                <ul>
+                    <li>Java</li>
+                    <li>Object-Oriented Programming</li>
+                    <li>Console Input and Output</li>
+                </ul>
 
-    <hr>
+            </article>
 
-    <h2 id="quickbite">QuickBite Food Delivery Database</h2>
+            <article id="traffic">
 
-    <img src="image/Project - Quickbite database.png"
-         alt="Screenshot of my QuickBite Food Delivery Database project"
-         width="400"
-         height="250">
+                <h2>Adaptive Traffic Management System</h2>
 
-    <p>
-        A food delivery database project developed to manage and organize
-        information about customers, restaurants, menu items, orders, and
-        delivery drivers. It uses MySQL to store structured data and maintain
-        relationships between different records, while MongoDB stores flexible
-        data such as menu details, customer reviews, and delivery activity.
-        The project also includes database views, stored procedures, and
-        triggers to support order management, driver assignment, delivery
-        predictions, and performance tracking. Through this project, I
-        strengthened my understanding of database design, normalization,
-        SQL operations, and working with both relational and NoSQL databases.
-    </p>
+                <img src="image/Project - Adaptive traffic management system.png"
+                     alt="Adaptive Traffic Management System screenshot"
+                     width="400"
+                     height="250"
+                     style="object-fit: cover;">
 
-    <details>
-        <summary>How I Built It</summary>
+                <p>
+                    A C++ project designed to manage traffic lights based on the number of vehicles
+                    waiting on different roads. The system uses vehicle counts to adjust traffic light
+                    timing, helping give busier roads more time to move traffic. It also uses SQLite
+                    to store traffic information and file handling to keep records. This project
+                    strengthened my understanding of conditional logic, database operations, and
+                    applying programming to a real-world traffic problem.
+                </p>
 
-        <ol>
-            <li>Identified the main entities and requirements of the food delivery platform.</li>
-            <li>Designed and organized the relational database tables.</li>
-            <li>Implemented database operations using MySQL.</li>
-            <li>Used MongoDB to manage document-based information and collections.</li>
-        </ol>
-    </details>
+                <details>
+                    <summary>How I Built It</summary>
 
-    <h3>Technologies Used</h3>
+                    <ol>
+                        <li>Designed the system to represent four traffic lanes.</li>
+                        <li>Collected vehicle information for each lane.</li>
+                        <li>Implemented traffic light timing based on vehicle numbers.</li>
+                        <li>Used a database and file handling to store traffic information and records.</li>
+                    </ol>
+                </details>
 
-    <ul>
-        <li>MySQL</li>
-        <li>MongoDB</li>
-        <li>Database Design and Normalization</li>
-    </ul>
+                <h3>Technologies Used</h3>
 
-    <hr>
+                <ul>
+                    <li>C++</li>
+                    <li>SQLite3</li>
+                    <li>File Handling</li>
+                </ul>
 
-    <h2>Useful Resource</h2>
+            </article>
 
-    <p>
-        I use the
-        <a href="https://www.w3.org/" target="_blank">World Wide Web Consortium (W3C)</a>
-        website as a reference for web standards.
-    </p>
+            <article id="quickbite">
 
-    <p>
-        <a href="index.html#contact">Contact Me</a>
-    </p>
+                <h2>QuickBite Food Delivery Database</h2>
 
-    <p>
-        <a href="index.html">Back to Home</a>
-    </p>
+                <img src="image/Project - Quickbite database.png"
+                     alt="Screenshot of my QuickBite Food Delivery Database project"
+                     width="400"
+                     height="250">
+
+                <p>
+                    A food delivery database project developed to manage and organize
+                    information about customers, restaurants, menu items, orders, and
+                    delivery drivers. It uses MySQL to store structured data and maintain
+                    relationships between different records, while MongoDB stores flexible
+                    data such as menu details, customer reviews, and delivery activity.
+                    The project also includes database views, stored procedures, and
+                    triggers to support order management, driver assignment, delivery
+                    predictions, and performance tracking. Through this project, I
+                    strengthened my understanding of database design, normalization,
+                    SQL operations, and working with both relational and NoSQL databases.
+                </p>
+
+                <details>
+                    <summary>How I Built It</summary>
+
+                    <ol>
+                        <li>Identified the main entities and requirements of the food delivery platform.</li>
+                        <li>Designed and organized the relational database tables.</li>
+                        <li>Implemented database operations using MySQL.</li>
+                        <li>Used MongoDB to manage document-based information and collections.</li>
+                    </ol>
+                </details>
+
+                <h3>Technologies Used</h3>
+
+                <ul>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Database Design and Normalization</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <section id="useful-resource">
+
+            <h2>Useful Resource</h2>
+
+            <p>
+                I use the
+                <a href="https://www.w3.org/" target="_blank">World Wide Web Consortium (W3C)</a>
+                website as a reference for web standards.
+            </p>
+
+            <p>
+                <a href="index.html#contact">Contact Me</a>
+            </p>
+
+            <p>
+                <a href="index.html">Back to Home</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Arsema Yeshidnber. All rights reserved.</p>
+    </footer>
 
 </body>
+
 </html>
-```
