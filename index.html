@@ -170,19 +170,16 @@
 
         <h3>Skill Levels</h3>
 
+
         <p>
             <label for="lvl-html">HTML</label>
-            <meter id="lvl-html" value="0.8" min="0" max="1">
-                80%
-            </meter>
+            <meter id="lvl-html" value="0.8" min="0" max="1">80%</meter>
             80%
         </p>
 
         <p>
             <label for="lvl-python">Python</label>
-            <meter id="lvl-python" value="0.7" min="0" max="1">
-                70%
-            </meter>
+            <meter id="lvl-python" value="0.7" min="0" max="1">70%</meter>
             70%
         </p>
 
@@ -194,24 +191,34 @@
                    max="1"
                    low="0.3"
                    high="0.7"
-                   optimum="1">
-                20%
-            </meter>
+                   optimum="1">20%</meter>
             20%
         </p>
 
         <p>
             <label for="lvl-cpp">C++</label>
-            <meter id="lvl-cpp" value="0.7" min="0" max="1">
-                70%
-            </meter>
+            <meter id="lvl-cpp" value="0.7" min="0" max="1">70%</meter>
             70%
         </p>
 
+        <p>
+            <label for="lvl-java">Java</label>
+            <meter id="lvl-java" value="0.6" min="0" max="1">60%</meter>
+            60%
+        </p>
+
+        <p>
+            <label for="lvl-css">CSS</label>
+            <meter id="lvl-css" value="0.3" min="0" max="1">30%</meter>
+            30%
+        </p>
+
+
         <h3>My Skills Chart</h3>
 
-        <canvas id="skillChart" width="300" height="150">
-            A bar chart showing my HTML, Python, JavaScript, and C++ skill levels.
+        <canvas id="skillChart" width="600" height="180">
+            A bar chart showing my HTML, Python, JavaScript, C++, Java,
+            CSS, Teamwork, and Presenting skill levels.
         </canvas>
 
         <h3>My Learning Roadmap</h3>
@@ -831,30 +838,35 @@ int main() {
     ctx.textBaseline = "middle";
     ctx.fillText("AY", 60, 62);
 
-
     const chart = document.getElementById('skillChart');
     const chartCtx = chart.getContext('2d');
 
     chartCtx.fillStyle = "#1f5fa8";
 
-    chartCtx.fillRect(25, 130 - 96, 40, 96);
+    chartCtx.fillRect(15, 145 - 88, 40, 88);
 
-    chartCtx.fillRect(95, 130 - 84, 40, 84);
+    chartCtx.fillRect(88, 145 - 77, 40, 77);
 
-    chartCtx.fillRect(165, 130 - 24, 40, 24);
+    chartCtx.fillRect(161, 145 - 22, 40, 22);
 
-    chartCtx.fillRect(235, 130 - 84, 40, 84);
+    chartCtx.fillRect(234, 145 - 77, 40, 77);
+
+    chartCtx.fillRect(307, 145 - 66, 40, 66);
+
+    chartCtx.fillRect(380, 145 - 33, 40, 33);
 
     chartCtx.fillStyle = "#000000";
     chartCtx.font = "12px Arial";
     chartCtx.textAlign = "center";
     chartCtx.textBaseline = "bottom";
 
-    chartCtx.fillText("HTML", 45, 148);
-    chartCtx.fillText("Python", 115, 148);
-    chartCtx.fillText("JavaScript", 185, 148);
-    chartCtx.fillText("C++", 255, 148);
-
+    chartCtx.fillText("HTML", 35, 175);
+    chartCtx.fillText("Python", 108, 175);
+    chartCtx.fillText("JavaScript", 181, 175);
+    chartCtx.fillText("C++", 254, 175);
+    chartCtx.fillText("Java", 327, 175);
+    chartCtx.fillText("CSS", 400, 175);
+    
 </script>
 
 </body>
