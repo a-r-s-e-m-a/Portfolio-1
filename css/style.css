@@ -2,8 +2,34 @@
    Portfolio stylesheet — Arsema Yeshidnber
 ========================================== */
 
+/* Palette
+   Primary: #1f5fa8 (blue)
+   Dark: #22313f (text)
+   Accent: hsl(37, 91%, 55%) (orange)
+   Light: #f4f6f9 (page background)
+*/
+
 /* ---------- Base ---------- */
+
 body {
-    background-color: #f1bdc5;
+    background-color: #f7c7cf;
+    color: #0d1203; /* dark blue-grey text */
     font-family: Arial, sans-serif;
 }
+
+h1 {
+    color: #023786; /* primary blue in hexadecimal */
+}
+
+h2 {
+    color: rgb(0, 119, 255); /* same blue in RGB */
+}
+
+h3 {
+    color: hsl(0, 98%, 18%); /* same blue in HSL */
+}
+
+mark {
+    background-color: rgba(245, 166, 35, 0.35); /* transparent orange */
+}
+
