@@ -149,3 +149,27 @@ pre {
 #contact {
     background-color: #E8F3F2;
 }
+
+/* ---------- Lab 17(D): CSS Combinators ---------- */
+
+/* Descendant selector: navigation links */
+nav a {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Child selector: paragraphs directly inside project cards */
+.card > p {
+    color: #526779;
+}
+
+/* Adjacent sibling selector: paragraph immediately after a heading */
+h2 + p {
+    font-size: 1.1rem;
+}
+
+/* General sibling selector: labels following a legend */
+legend ~ label {
+    font-weight: 600;
+}
