@@ -3,33 +3,36 @@
 ========================================== */
 
 /* Palette
-   Primary: #1f5fa8 (blue)
-   Dark: #22313f (text)
-   Accent: hsl(37, 91%, 55%) (orange)
-   Light: #f4f6f9 (page background)
+   Primary: #0F9D91 (teal)
+   Dark: #17324D (midnight navy)
+   Accent: #FF7866 (soft coral)
+   Light: #F2F7F7 (cool mist)
+   Surface: #FFFFFF (white)
 */
 
 /* ---------- Base ---------- */
 
 body {
-    background-color: #f7c7cf;
-    color: #0d1203; /* dark blue-grey text */
-    font-family: Arial, sans-serif;
+    background-color: #c7dfdf;
+    color: rgb(23, 50, 77);
+    font-family: 'Inter', sans-serif;
 }
 
+/* ---------- Colours in Five Formats ---------- */
+
 h1 {
-    color: #023786; /* primary blue in hexadecimal */
+    color: teal; /* Named colour */
 }
 
 h2 {
-    color: rgb(0, 119, 255); /* same blue in RGB */
+    color: #0F9D91; /* Hexadecimal */
 }
 
 h3 {
-    color: hsl(0, 98%, 18%); /* same blue in HSL */
+    color: hsl(7, 100%, 70%); /* HSL */
 }
 
 mark {
-    background-color: rgba(245, 166, 35, 0.35); /* transparent orange */
+    background-color: rgba(255, 120, 102, 0.25); /* RGBA */
+    color: #17324D;
 }
-
