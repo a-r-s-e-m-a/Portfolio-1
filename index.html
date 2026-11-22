@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,9 +35,12 @@
          width="200"
          height="200">
 
-    <p>Software Engineering student passionate about technology, software development, and creating innovative solutions through continuous learning and problem-solving.</p>
+    <p class="tagline">
+    Software Engineering student passionate about technology, software development, and creating innovative solutions through continuous learning and problem-solving.
+    </p>
 
     <button type="button"
+            class="btn"
             onclick="document.getElementById('hireDialog').showModal()">
         Hire me
     </button>
@@ -252,7 +254,7 @@
     <section id="projects">
         <h2>Projects</h2>
 
-        <article>
+        <article class="card">
             <h3>Simple Calculator</h3>
 
             <img src="image/Project - Simple calculator.png"
@@ -270,7 +272,7 @@
             </p>
         </article>
 
-        <article>
+        <article class="card">
             <h3>Library Management System</h3>
 
             <img src="image/Project - Library management system.png"
@@ -286,7 +288,7 @@
                 organize data, work with records, and apply programming concepts to solve a
                 practical problem in library management.
             </p>
-        </article>
+        </article class="card">
 
         <article>
             <h3>Inventory Management System</h3>
@@ -306,7 +308,7 @@
             </p>
         </article>
 
-        <article>
+        <article class="card">
             <h3>Adaptive Traffic Management System</h3>
 
             <img src="image/Project - Adaptive traffic management system.png"
@@ -325,7 +327,7 @@
             </p>
         </article>
 
-        <article>
+        <article class="card">
             <h3>My First Program</h3>
 
             <p>
@@ -805,8 +807,8 @@ int main() {
 
             </fieldset>
 
-            <button type="submit">Send Message</button>
-            <button type="reset">Clear</button>
+            <button type="submit" class="btn">Send Message</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
 
         </form>
 
