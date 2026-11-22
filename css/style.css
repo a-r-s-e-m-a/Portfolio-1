@@ -13,7 +13,7 @@
 /* ---------- Base ---------- */
 
 body {
-    background-color: #c7dfdf;
+    background-color: #c6d4d4;
     color: rgb(23, 50, 77);
     font-family: 'Inter', sans-serif;
 }
@@ -68,6 +68,13 @@ body {
     line-height: 1.6;
 }
 
+/* ---------- Lab 17(B): Grouping Selectors ---------- */
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+
 /* ---------- Part D: Text Properties ---------- */
 
 /* Main heading */
@@ -105,4 +112,34 @@ blockquote {
 code,
 pre {
     font-family: 'Courier New', monospace;
+}
+
+/* ---------- Lab 17(B): Class Selectors ---------- */
+
+/* Introductory paragraph */
+.tagline {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #526779;
+    letter-spacing: 1px;
+}
+
+/* Main buttons */
+.btn {
+    background-color: #0F9D91;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Secondary button */
+.btn-secondary {
+    background-color: #526779;
+}
+
+/* Project cards */
+.card {
+    background-color: #f6cece;
 }
