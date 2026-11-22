@@ -36,3 +36,25 @@ mark {
     background-color: rgba(255, 120, 102, 0.25); /* RGBA */
     color: #17324D;
 }
+
+/* ---------- Part B: CSS Units ---------- */
+
+/* Set the root font size */
+html {
+    font-size: 16px;
+}
+
+/* Main heading */
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Section headings */
+h2 {
+    font-size: 1.8rem;
+}
+
+/* Subheadings */
+h3 {
+    font-size: 1.2rem;
+}
