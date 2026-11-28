@@ -576,3 +576,38 @@ header {
 }
 
 
+/* ==========================================
+   Lab 20(B): Header Text with Specificity
+========================================== */
+
+/* ---------- Header Name ---------- */
+header h1 {
+    color: #FFFFFF;
+}
+
+/* ---------- Header Introduction ---------- */
+header .tagline {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Header Navigation ---------- */
+/* ---------- Header Navigation ---------- */
+header nav a:link,
+header nav a:visited {
+    color: #17324D;
+    background-color: #FFFFFF;
+    border: 1px solid #0F9D91;
+}
+
+header nav a:hover {
+    background-color: #FF7866;
+    color: #17324D;
+    border-color: #FF7866;
+}
+
+/* ---------- Hire Me Button ---------- */
+header .btn {
+    background-color: #FF7866;
+    color: #17324D;
+}
