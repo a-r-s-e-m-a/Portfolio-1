@@ -694,3 +694,21 @@ footer {
 dialog::backdrop {
     background-color: rgba(23, 50, 77, 0.6);
 }
+
+
+/* ==========================================
+   Lab 20(E): Image Opacity and Hover Effects
+========================================== */
+
+/* Slightly soften project images */
+
+.card img {
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+/* Restore full brightness on hover */
+
+.card:hover img {
+    opacity: 1;
+}
