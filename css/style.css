@@ -666,3 +666,31 @@ header .btn {
     color: #17324D;
     border: 2px solid #0F9D91;
 }
+
+
+/* ==========================================
+   Lab 20(D): Gradient Aside and Dark Footer
+========================================== */
+
+/* Soft warm gradient for Aside */
+
+aside {
+    background-image: radial-gradient(
+        circle at top left,
+        #FFF0E8,
+        #FFFFFF 70%
+    );
+}
+
+/* Dark navy Footer */
+
+footer {
+    background-color: #17324D;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Dialog Backdrop */
+
+dialog::backdrop {
+    background-color: rgba(23, 50, 77, 0.6);
+}
