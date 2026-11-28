@@ -522,3 +522,40 @@ textarea {
 }
 
 
+/* ==========================================
+   Lab 19(D): Styling Tables and Lists
+========================================== */
+
+/* ---------- Table Styling ---------- */
+table {
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #DCE6E6;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #17324D;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+caption {
+    font-weight: 600;
+    color: #17324D;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+/* ---------- Nested List Styling ---------- */
+ul ul {
+    list-style-type: square;
+}
+
