@@ -418,3 +418,107 @@ label[for^="lvl"] {
     display: inline-block;
     width: 7rem;
 }
+
+
+/* ==========================================
+   Lab 19(C): Spacing and Borders
+========================================== */
+
+/* ---------- Section Spacing ---------- */
+
+section,
+aside {
+    margin: 2.5rem 0;
+    padding: 1.75rem;
+    border-radius: 12px;
+}
+
+/* ---------- Aside Accent ---------- */
+
+aside {
+    background-color: #FFFFFF;
+    border-left: 6px solid #FF7866;
+    box-shadow: 0 4px 15px rgba(23, 50, 77, 0.06);
+}
+
+/* ---------- Project Cards ---------- */
+
+.card {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid #DCE6E6;
+    border-left: 4px solid #FF7866;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(23, 50, 77, 0.05);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+
+.card:hover {
+    border-color: #0F9D91;
+    box-shadow: 0 8px 22px rgba(23, 50, 77, 0.1);
+    transform: translateY(-4px);
+}
+
+/* ---------- Card Images and Videos ---------- */
+
+.card img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ---------- Embedded Content ---------- */
+
+iframe {
+    display: block;
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+    padding: 0.7rem 1.3rem;
+    margin: 0.5rem 0.35rem 0 0;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(15, 157, 145, 0.2);
+}
+
+/* ---------- Form Fieldsets ---------- */
+
+fieldset {
+    margin: 0 0 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #DCE6E6;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+/* ---------- Form Inputs ---------- */
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    padding: 0.65rem;
+    border-radius: 7px;
+    max-width: 100%;
+}
+
+
