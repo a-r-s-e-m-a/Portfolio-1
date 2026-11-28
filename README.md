@@ -38,5 +38,6 @@ Addis Ababa Science and Technology University
 ## Technologies Used in This Portfolio
 
 - HTML
+- CSS
 - Git
 - GitHub
