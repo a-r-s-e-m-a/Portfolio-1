@@ -168,8 +168,12 @@ pre {
 .tagline {
     text-align: center;
     font-size: 1.2rem;
-    color: #526779;
+    color: #d8ddce;
     letter-spacing: 1px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 1rem auto;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
 }
 
 /* Main buttons */
@@ -558,4 +562,17 @@ caption {
 ul ul {
     list-style-type: square;
 }
+
+/* ==========================================
+   Lab 20(A): Gradient Header with Pattern
+========================================== */
+
+header {
+    background-image:
+        url("../images/pattern.png"),
+        linear-gradient(135deg, #0F9D91, #17324D);
+    background-repeat: repeat;
+    color: #FFFFFF;
+}
+
 
