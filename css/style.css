@@ -565,13 +565,13 @@ ul ul {
 ========================================== */
 
 header {
-    background-image:
-        url("../images/pattern.png"),
-        linear-gradient(135deg, #0F9D91, #17324D);
-    background-repeat: repeat;
+    background-color: #0F9D91;
+    background-image: url("../images/pattern.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: #FFFFFF;
 }
-
 
 /* ==========================================
    Lab 20(B): Header Text with Specificity
