@@ -263,3 +263,54 @@ nav a[href$=".html"]::after {
     content: none;
 }
 
+
+/* ==========================================
+   Lab 18(C): Pseudo-classes
+========================================== */
+
+/* ---------- Link States: LoVe HAte ---------- */
+
+a:link {
+    color: #0F9D91;
+}
+
+a:visited {
+    color: #526779;
+}
+
+a:hover {
+    color: #FF7866;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #17324D;
+}
+
+/* ---------- Button Hover Effects ---------- */
+
+.btn:hover {
+    background-color: #0B756D;
+}
+
+.btn-secondary:hover {
+    background-color: #3D4E5D;
+}
+
+/* ---------- Position Selectors ---------- */
+
+/* First step of every ordered list */
+ol li:first-child {
+    font-weight: 600;
+}
+
+/* Every even-numbered table row */
+tbody tr:nth-child(even) {
+    background-color: #F2F7F7;
+}
+
+/* ---------- Project Card Hover Effect ---------- */
+
+.card:hover {
+    background-color: #E8F3F2;
+}
