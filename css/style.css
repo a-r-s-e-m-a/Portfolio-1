@@ -207,3 +207,59 @@ abbr[title] {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+
+
+/* ==========================================
+   Lab 18(B): Pseudo-elements
+========================================== */
+
+/* ---------- Link Icons ---------- */
+
+/* External links */
+a[href^="https"]::after {
+    content: " ↗";
+    color: #0F9D91;
+}
+
+/* Email links */
+a[href^="mailto"]::before {
+    content: "✉ ";
+    color: #0F9D91;
+}
+
+/* Phone links */
+a[href^="tel"]::before {
+    content: "☎ ";
+    color: #0F9D91;
+}
+
+/* Download links */
+a[download]::before {
+    content: "⬇ ";
+    color: #0F9D91;
+}
+
+/* ---------- Section Heading Decoration ---------- */
+h2::before {
+    content: "// ";
+    color: #FF7866;
+    font-weight: 700;
+}
+
+/* ---------- First Line Decoration ---------- */
+h2 + p::first-line {
+    font-weight: 600;
+}
+
+/* ---------- Links to Other HTML Pages ---------- */
+a[href$=".html"]::after {
+    content: " →";
+    color: #FF7866;
+}
+
+/* Avoid adding the arrow to navigation links */
+nav a[href$=".html"]::after {
+    content: none;
+}
+
