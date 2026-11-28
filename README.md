@@ -26,7 +26,7 @@ I enjoy learning how technology works and building useful applications. My curre
 
 **BSc in Software Engineering**  
 Addis Ababa Science and Technology University  
-2023 – Present
+2024 – Present
 
 ## Contact
 
@@ -38,5 +38,6 @@ Addis Ababa Science and Technology University
 ## Technologies Used in This Portfolio
 
 - HTML
+- CSS
 - Git
 - GitHub
