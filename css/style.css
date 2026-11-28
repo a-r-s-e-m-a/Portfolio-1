@@ -196,11 +196,8 @@ pre {
     background-color: #f6cece;
 }
 
-/* ---------- Lab 17(C): ID Selectors ---------- */
 
-#contact {
-    background-color: #E8F3F2;
-}
+
 
 /* ---------- Lab 17(D): CSS Combinators ---------- */
 
@@ -609,4 +606,63 @@ header nav a:hover {
 header .btn {
     background-color: #FF7866;
     color: #17324D;
+}
+
+
+/* ==========================================
+   Lab 20(C): Contact Background with Overlay
+========================================== */
+
+/* ==========================================
+   Lab 20(C): Contact Background with Overlay
+========================================== */
+
+/* ==========================================
+   Lab 20(C): Contact Background with Overlay
+========================================== */
+
+/* ==========================================
+   Lab 20(C): Contact Background with Overlay
+========================================== */
+
+/* ==========================================
+   Lab 20(C): Contact Background with Overlay
+========================================== */
+
+#contact {
+    background-image:
+        linear-gradient(
+            rgba(242, 247, 247, 0.58),
+            rgba(242, 247, 247, 0.58)
+        ),
+        url("../images/contact-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #17324D;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Contact text readability */
+
+#contact h2,
+#contact h3,
+#contact p,
+#contact label,
+#contact legend {
+    color: #17324D;
+    font-weight: 600;
+}
+
+/* Contact form readability */
+
+#contact input,
+#contact select,
+#contact textarea {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #17324D;
+    border: 2px solid #0F9D91;
 }
