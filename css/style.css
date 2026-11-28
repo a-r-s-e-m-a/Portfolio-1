@@ -173,3 +173,37 @@ h2 + p {
 legend ~ label {
     font-weight: 600;
 }
+
+
+/* ==========================================
+   Lab 18(A): Attribute Selectors
+========================================== */
+
+/* ---------- Form Input Attribute Selectors ---------- */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    border: 2px solid #0F9D91;
+    background-color: #FFFFFF;
+    color: #17324D;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 0.65rem;
+    border-radius: 6px;
+}
+
+/* ---------- Abbreviation Attribute Selector ---------- */
+abbr[title] {
+    cursor: help;
+    text-decoration: underline dotted #FF7866;
+    text-underline-offset: 3px;
+}
+
+/* ---------- Button Attribute Selector ---------- */
+[class*="btn"] {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
