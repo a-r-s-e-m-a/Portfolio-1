@@ -362,3 +362,59 @@ tbody tr:nth-child(even) {
 .card:hover {
     background-color: #E8F3F2;
 }
+
+
+/* ==========================================
+   Lab 19(B): Display Properties
+========================================== */
+
+/* ---------- Center Logo and Profile Image ---------- */
+
+#logo,
+header img {
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(23, 50, 77, 0.18);
+}
+
+/* ---------- Navigation Menu ---------- */
+
+nav {
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    margin: 0.3rem;
+    border: 1px solid #0F9D91;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #17324D;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+nav a:hover {
+    background-color: #0F9D91;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(15, 157, 145, 0.2);
+}
+
+/* ---------- Skill-Level Labels ---------- */
+
+label[for^="lvl"] {
+    display: inline-block;
+    width: 7rem;
+}
